@@ -1,17 +1,17 @@
 # 🔐 Secure Network Infrastructure with OPNsense
 
-📄 **The full project report (with screenshots) is available here:**  
+ **The full project report (with screenshots) is available here:**  
 - [OPNsense_Report_docx.docx](OPNsense_Report_docx.docx)
 
   ![dashboard.jpg](dashboard.jpg)
 
 This project demonstrates how to build a secure, segmented, and production-ready network architecture using [OPNsense](https://opnsense.org) — a powerful open-source firewall and routing platform. The lab setup follows real-world security best practices, including zone isolation, firewall policy enforcement, VPN remote access, IDS/IPS monitoring, and centralized logging.
 
-> 💡 This is a hands-on InfoSec/DevSecOps lab project, ideal for training and showcasing portfolio skills.
+>  This is a hands-on InfoSec/DevSecOps lab project, ideal for training and showcasing portfolio skills.
 
 ---
 
-## 🧱 Lab Architecture
+##  Lab Architecture
 
 The virtual lab environment includes:
 
@@ -19,11 +19,11 @@ The virtual lab environment includes:
 - **Ubuntu Server** — internal target host in LAN or DMZ.
 - **Kali Linux** — attacker machine for simulating threat scenarios.
 
-🖥️ **Virtualization platform:** VirtualBox.
+ **Virtualization platform:** VirtualBox.
 
 ---
 
-## 🌐 Network Design
+##  Network Design
 
 The network follows a multi-zone structure:
 
@@ -38,7 +38,7 @@ The network follows a multi-zone structure:
 
 ---
 
-## 🔥 Firewall Model
+##  Firewall Model
 
 - **Default-deny policy** on all interfaces.
 - **LAN:** allowed outbound DNS/HTTPS only.
@@ -47,11 +47,11 @@ The network follows a multi-zone structure:
 - **GeoIP filtering** blocks high-risk countries.
 - **Aliases** were used to simplify rule management.
 
-📌 All firewall rules follow the **least privilege** principle.
+ All firewall rules follow the **least privilege** principle.
 
 ---
 
-## 🔄 Network Services
+##  Network Services
 
 - **DHCP (ISC DHCPv4):** enabled per zone with custom ranges.
 - **NAT:** automatic outbound NAT applied.
@@ -59,7 +59,7 @@ The network follows a multi-zone structure:
 
 ---
 
-## 🛡️ IDS/IPS (Intrusion Detection/Prevention)
+##  IDS/IPS (Intrusion Detection/Prevention)
 
 - **Suricata** installed and running on WAN, LAN, and DMZ.
 - **IPS mode enabled** for real-time blocking of threats.
@@ -68,7 +68,7 @@ The network follows a multi-zone structure:
 
 ---
 
-## 🔐 VPN Access (OpenVPN)
+##  VPN Access (OpenVPN)
 
 A secure remote access VPN was implemented using OpenVPN:
 
@@ -79,16 +79,16 @@ A secure remote access VPN was implemented using OpenVPN:
 
 ---
 
-## 📡 Centralized Logging
+## Centralized Logging
 
 - Logs from OPNsense, Suricata, and OpenVPN are sent via **Syslog (UDP/514)**.
 - Log format is **RFC5424-compliant**, ensuring compatibility with SIEM systems.
 
 ---
 
-## 📘 Project Outcomes
+##  Project Outcomes
 
-✅ Key results of the project:
+ Key results of the project:
 
 - Built a **secure and segmented network architecture** using OPNsense.
 - Applied strict **firewall policies** across multiple zones.
@@ -98,11 +98,11 @@ A secure remote access VPN was implemented using OpenVPN:
 
 ---
 
-## 📎 Related Files
+##  Related Files
 
 - [`OPNsense_Report_docx.docx`](OPNsense_Report_docx.docx) — complete technical documentation with screenshots and configs  
 
-## 🧾 Technical Summary
+##  Technical Summary
 
 This project delivers a fully configured, secure network infrastructure built from scratch, including:
 
