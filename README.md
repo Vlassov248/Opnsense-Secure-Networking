@@ -7,8 +7,6 @@
 
 This project demonstrates how to build a secure, segmented, and production-ready network architecture using [OPNsense](https://opnsense.org) — a powerful open-source firewall and routing platform. The lab setup follows real-world security best practices, including zone isolation, firewall policy enforcement, VPN remote access, IDS/IPS monitoring, and centralized logging.
 
->  This is a hands-on InfoSec/DevSecOps lab project, ideal for training and showcasing portfolio skills.
-
 ---
 
 ##  Lab Architecture
